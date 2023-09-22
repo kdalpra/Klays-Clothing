@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Klay's Clothing</title>
+        <link rel="icon" type="image/x-icon" href="imgs/favicon.png">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <script src ="script.js"></script>
+        <div class="cartContainer">
+            <a href="cart.html"><img class="cart" src="imgs/cart.png"></a> 
+            <script>totalCart()</script>
+        </div>
+        <div class="logoHolder">
+            <a href="index.html"><img class="brandLogo" src="imgs/KClogoMain.png"></a>
+        </div>
+
+        <script>renderNav();</script>
+
+        <div class="productLines">
+            <a class="imgA" href="products/shirt.html"> 
+            <img alt="Klay Shirt" class="prod" src ="imgs/products/Shirt/KlogoWhite.jpg" onmouseover="changeImageHover(this, 'imgs/products/Shirt/KlogoBlack.jpg')" onmouseout="changeImageHover(this, 'imgs/products/Shirt/KlogoWhite.jpg')" >
+                <p class="listingName">K LOGO</p>
+                <p class="listingName">SHIRT</p>
+                <p class="listingName">$30</p>
+            </a>
+        <a class="imgA" href="products/hoodie.html"> 
+            <img alt="klay hoodie" class="prod" src ="imgs/products/Hoodie/79377.jpg" onmouseover="changeImageHover(this, 'imgs/products/Hoodie/78459.jpg')" onmouseout="changeImageHover(this, 'imgs/products/Hoodie/79377.jpg')">
+            <p class="listingName">K LOGO</p>
+            <p class="listingName">HOODIE</p>
+            <p class="listingName">$50</p></a>
+        
+        
+        <a class="imgA" href="products/hat.html"> 
+            <img alt="phone case" class="prod" src ="imgs/products/Hat/red.jpg" onmouseover="changeImageHover(this, 'imgs/products/Hat/yellow.jpg')" onmouseout="changeImageHover(this, 'imgs/products/Hat/red.jpg')">
+            <p class="listingName">K LOGO</p>
+            <p class="listingName">SNAP BACK</p>
+            <p class="listingName">$30</p>
+        </a>
+
+        <a class="imgA" href="products/tanktop.html"> 
+            <img alt="tank top" class="prod" src ="imgs/products/Tank/tankblack.jpg" onmouseover="changeImageHover(this, 'imgs/products/Tank/tankwhite.jpg')" onmouseout="changeImageHover(this, 'imgs/products/Tank/tankblack.jpg')">
+            <p class="listingName">K LOGO</p>
+            <p class="listingName">TANK TOP</p>
+            <p class="listingName">$30</p></a>
+    </div>
+
+      <div class="chat-button-container">
+        <button class="chat-button" onclick="chatButton()"></button>
+        <div class="chat-menu">
+            <div class="chat-box">
+                <div class="message">
+                    <p>Hello, how can we help you today?</p>
+                </div>
+            </div>
+            <input type="text" class="user-input" placeholder="Type your message..." />
+        </div>
+    </div>
+    <div class="extraSpacing"></div>
+
+    <footer class="site-footer">
+        <div class="foContainer">
+            <div class="footer-tabs">
+                <div class="footer-tab">
+                    <a href="index.html"><h3>Shop All</h3></a>
+                </div>
+                <div class="footer-tab">
+                    <a href="contact.html"><h3>Contact</h3></a>
+                </div>
+                <div class="footer-tab">
+                    <a href="about.html"><h3>About Us</h3></a>
+                </div>
+                <div class="footer-tab">
+                    <a href="success.html"><h3>My Order</h3></a>
+                </div>
+            </div>
+            <p>&copy; 2023 Klay's Clothing. All rights reserved.</p>
+            <p>Contact: klaytondalpra@student.purdueglobal.edu</p>
+        </div>
+    </footer>
+
+    
+    </body>
+</html>

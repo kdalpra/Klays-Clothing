@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>K Logo Hoodie</title>
+        <link rel="icon" type="image/x-icon" href="../imgs/favicon.png">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    
+    <body>
+        <script src ="../script.js"></script>
+        <div class="cartContainer">
+            <a href="../cart.html"><img alt="cart" class="cart" src="../imgs/cart.png"></a> 
+            <script>totalCart()</script>
+        </div>
+
+        <div class="logoHolder">
+            <a href="../index.html"><img alt="Logo" class="brandLogo" src="../imgs/KClogoMain.png"></a>
+        </div>
+        
+        
+        <script>renderNavProducts();</script>
+
+        <div class="prodMain">
+            <div class="prodImg">
+                <img alt="product image" id="productImage" src="../imgs/products/Shirt/KlogoWhite.jpg" style="width: 100%;">
+                <div class="imageThumbnails">
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/products/Shirt/KlogoWhite.jpg" onclick="changeRadio('colorWhite')">
+                    <img alt="thumbnail image" class="thumbnails" src="../imgs/products/Shirt/KlogoBlack.jpg" onclick="changeRadio('colorBlack')">
+                  </div>
+            </div>
+            <div class="prodDetails">
+                <h1>K LOGO T SHIRT</h1>
+                <p class="priceText">$ 30</p>
+
+                <div id="productIdForCart" class="dev"></div>
+                <div id="pId1" class="dev">price_1NXUBmFZsArGsEGNEIc43byK</div>
+                <div id="pId2" class="dev">price_1NXUBmFZsArGsEGNEIc43byK</div>
+                <div id="pId3" class="dev">price_1NXUBmFZsArGsEGNEIc43byK</div>
+                <div id="pId4" class="dev">price_1NXUBmFZsArGsEGNEIc43byK</div>
+
+                <div class="colorOptions">
+
+                    <input type="radio" id="colorWhite" name="color" value="white" onchange="updateBuyNowLink(`window.location.href='https://buy.stripe.com/test_00gdTdaE29Ud5SE7sy';` ,'../imgs/products/Shirt/KlogoWhite.jpg',
+                    ['price_1NXUBmFZsArGsEGNEIc43byK','price_1NXUBmFZsArGsEGNEIc43byK','price_1NXUBmFZsArGsEGNEIc43byK','price_1NXUBmFZsArGsEGNEIc43byK']
+                    )" checked>
+                    <label for="colorWhite">White</label>
+
+                    <input type="radio" id="colorBlack" name="color" value="black" onchange="updateBuyNowLink(`window.location.href='https://buy.stripe.com/test_9AQ2avaE2fexfte4gn';`, '../imgs/products/Shirt/KlogoBlack.jpg',
+                    ['price_1NXUByFZsArGsEGN1MdE73PV','price_1NXUByFZsArGsEGN1MdE73PV','price_1NXUByFZsArGsEGN1MdE73PV','price_1NXUByFZsArGsEGN1MdE73PV']
+                    )" >
+                    <label for="colorBlack">Black</label>
+                    
+                    
+                </div>
+                <button id="buyNowBtn" class="buyNowBtn" onclick="window.location.href='https://buy.stripe.com/test_00gdTdaE29Ud5SE7sy';">BUY NOW</button>
+                <div class="dropdownSize">
+                    <button id="sizeBtn" class="dropbtn" onclick="toggleOptions()">Select Size</button>
+                    <div id="sizeDropdown" class="dropdownSize-content">
+                        <a href="#sizeDropdown" onclick="changeSizeSelect('S')">S</a>
+                        <a href="#sizeDropdown" onclick="changeSizeSelect('M')">M</a>
+                        <a href="#sizeDropdown" onclick="changeSizeSelect('L')">L</a>
+                        <a href="#sizeDropdown" onclick="changeSizeSelect('XL')">XL</a>
+                    </div>
+                </div>
+
+
+                <button  class="buyNowBtn" onclick="addToCart(productImage.src)">ADD TO CART</button> 
+   
+                <div class="sizeChartDivKlay">
+                    <button class= "sizingBtnKlay" id="toggleButton" onclick="sizingChange()">˅ SIZE GUIDE</button>
+                    <img alt="sizing guide" class="sizingKlay" src="../imgs/hoodie_size.png">
+                </div>
+                <p class = "detailText">DETAILS</p>
+                <p class="detailText">50% cotton, 50% polyester</p>
+                <p class="detailText">8.25 oz fleece</p>
+                <p class="detailText">Ships within 2 weeks</p>
+                <p class="detailText">All sales are final</p>
+            </div>
+        </div>
+
+        <div class="chat-button-container">
+            <button class="chat-button" onclick="chatButton()"></button>
+            <div class="chat-menu">
+                <div class="chat-box">
+                    <div class="message">
+                        <p>Hello, how can we help you today?</p>
+                    </div>
+                </div>
+                <input type="text" class="user-input" placeholder="Type your message..." />
+            </div>
+        </div>
+        <footer class="site-footer">
+            <div class="foContainer">
+                <div class="footer-tabs">
+                    <div class="footer-tab">
+                        <a href="../index.html"><h3>Shop All</h3></a>
+                    </div>
+                    <div class="footer-tab">
+                        <a href="../contact.html"><h3>Contact</h3></a>
+                    </div>
+                    <div class="footer-tab">
+                        <a href="../about.html"><h3>About Us</h3></a>
+                    </div>
+                    <div class="footer-tab">
+                        <a href="../success.html"><h3>My Order</h3></a>
+                    </div>
+                </div>
+                <p>&copy; 2023 Klay's Clothing. All rights reserved.</p>
+                <p>Contact: klaytondalpra@student.purdueglobal.edu</p>
+            </div>
+        </footer>
+    </body>
+</html>
